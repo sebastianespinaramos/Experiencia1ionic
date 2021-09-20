@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>FORMULARIO</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+      defaulttref="/"
+        text="back"
+        color="danger"
+        mode="ios"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" class="background">
+<ion-card center>
+  <img src="assets\chococat.png"  class="center">
+  <ion-card-header color="danger">
+    Datos del Usuario
+  </ion-card-header>
+  <ion-card-content >
+   <ion-list>
+     <ion-item>
+       <ion-label position="floating">NOMBRE:</ion-label>
+       <ion-input  type="text" [(ngModel)]="nombre" required size="4"></ion-input>
+     </ion-item>
+     <ion-item>
+       <ion-label position="floating">EDAD:</ion-label>
+       <ion-input type="number"[(ngModel)]=pass></ion-input>
+     </ion-item>
+      <ion-item>
+    <ion-label position="floating" >F:NACIMIENTO</ion-label>
+    <ion-input  type="date"  [(ngModel)]="fec" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" >CORREO ELECTRONICO:</ion-label>
+    <ion-input  type="email" [(ngModel)]="correoelectronico" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" >CONTRASEÑA:</ion-label>
+    <ion-input  type="password" [(ngModel)]="correoelectronico" required></ion-input>
+  </ion-item>
+  
+</ion-list>
+
+
+
+   <div padding>
+    <ion-button  expand="block" shape="round" (click)="gotohome()">Registrarse</ion-button>
+   </div>
+  </ion-card-content>
+</ion-card>
+
+
+
+</ion-content>
